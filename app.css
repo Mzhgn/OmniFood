@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+}
