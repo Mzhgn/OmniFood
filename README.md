@@ -8,4 +8,4 @@
 
 ## Used Languages:
 
-This project is built using: -` HTML`, `CSS`, `JavaScript `for the frontend
+This project is built using:  ` HTML`, `CSS`, `JavaScript `  for the frontend
