@@ -200,6 +200,11 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 400ms ease-in;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.078);
 }
 .meal-tag {
   margin-bottom: 1.2rem;
@@ -269,8 +274,12 @@
   gap: 1.6rem;
   align-items: center;
 }
-.list-icon {
+.diet-icon {
   width: 3rem;
   height: 3rem;
   color: var(--primary-color);
+}
+.link-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
