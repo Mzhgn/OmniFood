@@ -110,3 +110,7 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75;
 }
+
+strong {
+  font-weight: 500;
+}
