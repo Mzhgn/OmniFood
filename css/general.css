@@ -28,8 +28,8 @@ body {
 /* General Section Reusable*/
 /********************/
 
-.hero-btn:link,
-.hero-btn:visited {
+.btn:link,
+.btn:visited {
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
@@ -75,16 +75,6 @@ body {
   border-bottom: 1px solid transparent;
 }
 
-/* helper classes */
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-.margin-bottom-md {
-  margin-bottom: 4.8rem !important;
-}
-.center-text {
-  text-align: center;
-}
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -96,11 +86,18 @@ body {
   row-gap: 9.6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 .grid--center-v {
   align-items: center;
@@ -131,6 +128,34 @@ body {
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75;
+}
+/* helper classes */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.center-text {
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--primary-color);
 }
 
 strong {
