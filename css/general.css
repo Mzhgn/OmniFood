@@ -176,6 +176,7 @@ body {
   display: flex;
   gap: 1.6rem;
   align-items: center;
+  line-height: 1.2;
 }
 .list-icon {
   width: 3rem;
