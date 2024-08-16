@@ -41,7 +41,7 @@
   }
 }
 
-/* below 944px */
+/* below 944px/mobile */
 
 @media (max-width: 59em) {
   html {
@@ -90,6 +90,7 @@
   }
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
   .main-nav {
     position: absolute;
