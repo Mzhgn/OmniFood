@@ -1,13 +1,16 @@
-const yearEl = document.querySelector(".year");
+const $ = document;
+
+const yearEl = $.querySelector(".year");
 
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 // for mobile nav
 
-const btnNav = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
-const allLinks = document.querySelectorAll("a:link");
+const btnNav = $.querySelector(".btn-mobile-nav");
+const headerEl = $.querySelector(".header");
+const allLinks = $.querySelectorAll("a:link");
+const mainNav = $.querySelector(".main-nav");
 
 btnNav.addEventListener("click", () => {
   // console.log("hi");
@@ -26,11 +29,22 @@ allLinks.forEach((link) => {
       });
     }
     if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
+      const sectionEl = $.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
     if (link.classList.contains("nav-link")) {
       headerEl.classList.toggle("nav-open");
     }
   });
+});
+
+// Sticky nav
+
+document.addEventListener("scroll", () => {
+  // console.log(document.documentElement.scrollTop);
+  if (document.documentElement.scrollTop > 800) {
+    document.body.classList.add("sticky");
+  } else {
+    document.body.classList.remove("sticky");
+  }
 });
